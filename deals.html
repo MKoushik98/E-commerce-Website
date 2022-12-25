@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BIG Deals</title>
+    <style>
+        body {
+            background-color: lightpink;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+
+            position: relative;
+            z-index: 1;
+            background-color: #2874f0;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar .ul .li {
+            display: inline-block;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+            /* padding: 5px 5px; */
+        }
+
+
+
+        ul a {
+            display: none;
+            position: absolute;
+            color: white;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            overflow: hidden;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            z-index: 3;
+
+            padding: 10px;
+
+
+
+        }
+
+        li:hover>ul a {
+            display: block;
+        }
+
+        ul a:hover {
+            background-color: blueviolet;
+        }
+
+        .img {
+            height: 90px;
+            width: 130px;
+            position: absolute;
+            top: 20px;
+
+            display: inline-block;
+
+        }
+
+        input {
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+        }
+
+        .si {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            /* bottom: 10px; */
+
+
+        }
+
+        .fc {
+            /* position:relative; */
+            height: 60px;
+            width: 70px;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .ul .li {
+            display: flex;
+        }
+
+        .li strong {
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: large;
+            margin-top: 15px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center
+        }
+
+        span {
+            color: gold;
+        }
+
+        .fl {
+            height: 70px;
+            width: 70px;
+            margin: 10px 0px;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+        }
+
+        .img3 {
+            height: 200px;
+            width: 250px;
+        }
+
+        .section2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box3 {
+            justify-content: center;
+            flex-basis: 25%;
+            margin-top: 15px;
+            padding: 20px 0px;
+        }
+
+        p {
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: crimson;
+        }
+
+        button {
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-style: none;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            font-weight: bold;
+            box-shadow: 0px 0px 10px 10px blue;
+        }
+
+        h2 {
+            text-align: center;
+            box-shadow: 0px 0px 15px 15px crimson;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+        }
+
+        .sale {
+            height: 200px;
+            width: 250px;
+            position: relative;
+            left: 600px;
+        }
+
+        .img4 {
+            height: 200px;
+            width: 250px;
+        }
+
+        .box4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box5 {
+            flex-basis: 25%;
+            margin: 3px 0px 50px 0px;
+        }
+
+        .log {
+            height: 30px;
+            width: 30px;
+        }
+
+        .box23 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box26 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box27 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: darkgray;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .buynow a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .newuser img {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+
+        }
+            .li .grocery{
+            display:flex;
+            position: relative;
+            color: white;
+           
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- this is header and navigation -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="icon"><img src="./Listing Page/flipkart-icon (1).webp" class="fl" alt=""></div>
+
+
+                <ul class="ul">
+                    <li class="li"><strong> FLIPCART</strong><br>Explore <span>Plus</span></li>
+
+                    <li class="li">Home</li>
+                    <li class="li">Mobile
+                        <ul>
+                            <li><a href="android.html"> Android</a></li>
+                            <li><a href="iphone.html"> Iphone</a></li>
+                        </ul>
+                    </li>
+                    <li class="li">Computer
+                        <ul>
+                            <li class=""><a href="windows.html"> Windows</a></li>
+                            <li class=""><a href="macbook.html"> MacBook</a></li>
+                        </ul>
+                    </li>
+                    <li class="li"><a href="grocery.html" class="grocery"> Grocery</a></li>
+                    <li class="li"><input type="search" placeholder="Scarch Product">
+                        <img src="./sicon.jpeg" class="si" alt="">
+                    </li>
+
+                    <li class="li"><a class="newuser" href="Newuser.html">Sign Up</a></li>
+                    <li class="li"><a class="newuser" href="Loginpage.html">Login</a></li>
+                    <li class="li"><a class="newuser" href="Mycart.html"><img src="./cart.jpeg" class="fc" alt=""></a>
+                    </li>
+
+
+
+                </ul>
+
+
+
+
+            </nav>
+        </header>
+
+
+
+        <!-- this is body and  2nd section for product listing -->
+
+        <h2> Now Shop With An Exceiting Offer from @10% off and Upto @70% off</h2>
+        <section class="section2">
+
+            <div class="box3"><img src="fullshirt.jpeg" class="img3" alt="">
+                <p>Branded Full Shirt<br><del>@50% off</del><br>Now @70% off</p>
+                <button>Add to cart</button>
+                <button>Buy Now</button>
+                <button>Details</button>
+            </div>
+            <div class="box3">
+                <img src="mobile1.jpg" class="img3" alt="">
+                <p>Mobile Phones<br><del>@10% off</del>
+                    <br>upto 20% off
+                </p>
+                <button>Add to cart</button>
+                <button>Buy Now</button>
+                <button>Details</button>
+
+
+            </div>
+            <div class="box3">
+                <img src="grocery.jpg" class="img3" alt="">
+                <p>Groceries at @25% off<br>Buy any 5kg fruits<br>get @25% off overall </p>
+                <button>Add to cart</button>
+                <button>Buy Now</button>
+                <button>Details</button>
+
+            </div>
+            <div class="box3">
+                <img src="laptop.jpg" class="img3" alt="">
+                <p>HP Laptops<br>from 5% to upto 15% off </p>
+                <button>Add to cart</button>
+                <button>Buy Now</button>
+                <button>Details</button>
+
+            </div>
+            <div class="box3">
+                <img src="desktop1.jpeg" class="img3" alt="">
+                <p>Dragon PC with 10% off <br>when you pay using card</p>
+                <button>Add to cart</button>
+                <button>Buy Now</button>
+                <button>Details</button>
+
+            </div>
+            <div class="box3">
+                <img src="headphone.png" class="img3" alt="">
+                <p>Super Headphone nackband<br>now get<del>@5%</del> @15% off</p>
+                <button>Add to cart</button>
+                <button>Buy Now</button>
+                <button>Details</button>
+
+            </div>
+            <div class="box3">
+                <img src="mobile2.webp" class="img3" alt="">
+                <p>Buy One plus phone and get rewards<br> and also @10% off by using Axis Card</p>
+                <button>Add to cart</button>
+                <button>Buy Now</button>
+                <button>Details</button>
+            </div>
+            <div class="box3">
+                <img src="watch.jpeg" class="img3" alt="">
+                <p>Watches Now in your hand<br>Buy and Get instant @10% off</p>
+                <button>Add to cart</button>
+                <button>Buy Now</button>
+                <button>Details</button>
+            </div>
+        </section>
+        <section class="section3">
+            <!-- <img src="sale.jpeg" class="sale" alt=""> -->
+            <h2>Today's Offers and sales<br>
+                offer ends in 17:23:10 hrs<br>No Cost EMI--Exchange Offer</h2>
+            <div class="box4">
+                <div class="box5">
+                    <img src="mobile2.webp" alt="" class="img4">
+                    <p>Big Offer on MObile Purchase<br>
+                        only on oneplus C2<br>
+                        <del>@Rs.18999</del><br>@Rs.17999<br>
+
+                    </p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+
+
+                </div>
+                <div class="box5">
+                    <img src="laptop5.jpeg" alt="" class="img4">
+                    <p>DELL super z3<br>WITH i9 intel core<br><del>@Rs.55000</del><br>now @Rs.53400</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="laptop6.jpeg" alt="" class="img4">
+                    <p>Acer Fine Series with latest processor<br>Gaming fast Laptop<br><del>@Rs.67000</del><br>@Rs.64999
+                    </p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="desktop4.jpeg" alt="" class="img4">
+                    <p>Miui Android full HD TV<br>with high defination audio<br><del>@Rs.13000</del><br>@Rs.11500</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="desktop5.jpeg" alt="" class="img4">
+                    <p>Loco 32inch Monitor<br>With Build IN Intelligence<br><del>@Rs.45000</del> @Rs.43900</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="veg.jpeg" alt="" class="img4">
+                    <p>Take Grocery Items And Get<br>for shop@Rs.3000 get @Rs.500 off<br>And shop for @Rs.7000
+                        get@Rs.1500 off</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="sugar.jpeg" alt="" class="img4">
+                    <p>Get 5 KG of sugar<br><del>@Rs.210</del>@Rs.170<br>10 KG of Suger<del> @Rs.520</del>@Rs.450</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="headphone.png" alt="" class="img4">
+                    <p>Techfire fire v2 Nackband<br>With High DEfination Audio<br><del>@Rs.799</del> @Rs.650</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="phone.png" alt="" class="img4">
+                    <p>Iphone 12 Super Amyoled Display<br>Upto 256GB 8GB<br>
+                        <del>@Rs.70000</del> @Rs.67900
+                    </p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="tshirt.jpeg" alt="" class="img4">
+                    <p>Remoynd Shirt with White Color<br>All Sizes Avalable for men and woman<br><del>@Rs.1299</del>
+                        @Rs.1150</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box5">
+                    <img src="watch.jpeg" alt="" class="img4">
+                    <p>Orion Watchs now Become Smart<br>Battery Backup Upto 8 hrs<br><del>@Rs.1999</del> @Rs.999</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+
+                </div>
+                <div class="box5">
+                    <img src="fullshirt1.jpeg" alt="" class="img4">
+                    <p>Full Shirt from Kingstone<br>sexiest Designed and fittings<br><del>@Rs.3999</del> @Rs.2999</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+        </section>
+
+        <!-- this is for footer -->
+
+        <section class="section3">
+            <footer class="last">
+                <div class="box23">
+                    <div class="lox">
+                        <label for="email">Type Your Email</label>
+                        <input type="email" id="email" class="email" placeholder="Type your email">
+                        <button>Subcribe</button>
+                    </div>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>About Flipcart</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="td1">order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Return policy</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">careers</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">locations</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">sitemap</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th>About Policy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="td1">order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Return policy</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Track Your Order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Service Center</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Feedback</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="box26">
+                    <p class="copy">&copy;copyright right reserve 2022</p>
+                </div>
+                <div class="box27">
+                    <div class="lox1">
+                        <img src="fblogo.png" class="log" alt="">
+                        <img src="instalogo.png" class="log" alt="">
+                        <img src="twitterlogo.png" class="log" alt="">
+                        <img src="gmail.png" class="log" alt="">
+                    </div>
+                </div>
+
+
+            </footer>
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

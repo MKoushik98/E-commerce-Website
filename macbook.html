@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+
+            position: relative;
+            z-index: 1;
+            background-color: #2874f0;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar .ul .li {
+            display: inline-block;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+            /* padding: 5px 5px; */
+        }
+
+
+
+        ul a {
+            display: none;
+            position: absolute;
+            color: white;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            overflow: hidden;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            z-index: 3;
+
+            padding: 10px;
+
+
+
+        }
+
+        li:hover>ul a {
+            display: block;
+        }
+
+        ul a:hover {
+            background-color: blueviolet;
+        }
+
+        .img {
+            height: 90px;
+            width: 130px;
+            position: absolute;
+            top: 20px;
+
+            display: inline-block;
+
+        }
+
+        input {
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+        }
+
+        .si {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            /* bottom: 10px; */
+
+
+        }
+
+        .fc {
+            /* position:relative; */
+            height: 60px;
+            width: 70px;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .ul .li {
+            display: flex;
+        }
+
+        .li strong {
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: large;
+            margin-top: 15px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center
+        }
+
+        span {
+            color: gold;
+        }
+
+        .fl {
+            height: 70px;
+            width: 70px;
+            margin: 10px 0px;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex-basis: 25%;
+
+        }
+
+        button {
+            background-color: crimson;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 10px;
+            height: 35px;
+            font-weight: bold;
+            border-right: none;
+        }
+
+        button:hover {
+            box-shadow: 0px 0px 10px 10px blueviolet;
+        }
+
+        p span {
+            color: blue;
+        }
+
+
+
+        .box1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .box1 p {
+            color: brown;
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .log {
+            height: 30px;
+            width: 30px;
+        }
+
+        .box23 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box26 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box27 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: darkgray;
+        }
+
+        .btn {
+            background-color: aqua;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            border-style: none;
+
+        }
+
+        .b {
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            color: darkmagenta;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .buynow a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .newuser img {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+
+        }
+        button .abd{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        button{
+            border-style: none;
+        }
+            .li .grocery{
+            display:flex;
+            position: relative;
+            color: white;
+           
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <!-- this is for header -->
+        <section class="section">
+            <header>
+                <nav class="navbar">
+                    <div class="icon"><img src="./Listing Page/flipkart-icon (1).webp" class="fl" alt=""></div>
+
+
+                    <ul class="ul">
+                        <li class="li"><strong> FLIPCART</strong><br>Explore <span>Plus</span></li>
+
+                        <li class="li">Home</li>
+                        <li class="li">Mobile
+                            <ul>
+                                <li><a href="android.html"> Android</a></li>
+                                <li><a href="iphone.html"> Iphone</a></li>
+                            </ul>
+                        </li>
+                        <li class="li">Computer
+                            <ul>
+                                <li class=""><a href="windows.html"> Windows</a></li>
+                                <li class=""><a href="macbook.html"> MacBook</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="grocery.html" class="grocery">Grocery</a></li>
+                        <li class="li"><input type="search" placeholder="Scarch Product">
+                            <img src="./sicon.jpeg" class="si" alt="">
+                        </li>
+
+                        <li class="li"><a class="newuser" href="Newuser.html"> Sign Up</a></li>
+                        <li class="li"><a class="newuser" href="Loginpage.html"> Login</a></li>
+                        <li class="li"><a class="newuser" href="Mycart.html"> <img src="./cart.jpeg" class="fc" alt=""></a></li>
+
+
+
+                    </ul>
+
+
+
+
+                </nav>
+            </header>
+        </section>
+        <!-- this is for product list and details -->
+        <section class="section1">
+            <div class="box1">
+                <p>SORT</p>
+                <P>|</P>
+                <p>Filter</p>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="box">
+                <p class="b">Categories</p>
+                <label for="windows" id="windows">Windows</label>
+                <input type="radio" name="filter" id="windows">
+                <br>
+                <label for="linux" id="linux">Linux</label>
+                <input type="radio" name="filter" id="linux">
+                <br>
+                <label for="iphone" id="iphone">Iphone</label>
+                <input type="radio" name="filter" id="iphone">
+                <br>
+                <label for="android" id="android">Android</label>
+                <input type="radio" name="filter" id="android"><br>
+                <button class="scarch">Scarch</button>
+            </div>
+
+            <div class="box">
+                <img src="./Listing Page/macbook0.jpeg" alt="">
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">APPLE 2021 Macbook Pro M1 Max</b><br>32 GB|1 TB SSD|Mac OS Monterey<br>MK1A3HN/A
+                    16.2 inch,Space Gray,2.2Kg<br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+
+            <div class="box">
+                <p><b class="b">Price Rs.3,09,490</b><br><del>3,29,900</del> <span>6% off</span><br>Emi starts
+                    from Rs.10,729/month.<br><span>View Plans
+                    </span>
+                </p><br>
+                <button><a href="details15.html" class="abd"> Details</a></button>
+                <button><a href="Buynow15.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+            </div>
+
+
+
+
+
+            <div class="box">
+
+            </div>
+
+            <div class="box">
+                <img src="./Listing Page/macbook1.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">APPLE 2022 Macbook AIR M2</b><br>8 GB|256 GB SSD|Mac OS Monterey
+                    <br>MLY33HN/A(13.6 inch,Midnight,1.24 Kg) <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+
+                </p>
+
+            </div>
+
+            <div class="box">
+                <p><b class="b">Price Rs.1,12,990</b><br><del>1,19,990</del> <span>5% off</span><br>No cost EMI
+                    Starts Rs.3,917/month<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details16.html" class="abd"> Details</a></button>
+                <button><a href="Buynow16.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./Listing Page/macbook12.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">APPLE MacBook Air M1</b><br>16GB|256 GB SSD|Mac OS Big Sur<br>Z124J001KD(13.3
+                    inch,space Grey,1.29Kg)
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+
+                </p>
+
+
+
+
+
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.1,12,900</b><br>EMI From
+                    Rs.3,914/month<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details17.html" class="abd"> Details</a></button>
+                <button><a href="Buynow17.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./Listing Page/macbook13.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">APPLE MacBook Air M3</b><br>16 GB|512 GB SSD|Mac OS Big Sur <br>Z124J006KD
+                    ()13.3 inch,Silver,1.29 Kg)
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.1,24,990</b><br><del>1,32,900</del> <span>5% off</span><br>EMI From
+                    Rs.4,333/month<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details18.html" class="abd"> Details</a></button>
+                <button><a href="Buynow18.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./Listing Page/macbook14.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">APPLE MacBook Pro Core i9 9th Gen</b><br>16 GB|1 TB SSD|Mac OS Catalina<br>4 GB
+                    Graphics
+                    <br>MVVM2HN/A(16 inch,Silver,2 Kg)
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.2,15,990</b><br><del>2,39,900</del> <span>9% off</span><br>EMI From
+                    Rs.7,488/month<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details19.html" class="abd"> Details</a></button>
+                <button><a href="Buynow19.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+
+
+
+        </section>
+
+        <!-- this is for footer -->
+        <footer>
+
+            <div class="box23">
+                <div class="lox">
+                    <label for="email">Type Your Email</label>
+                    <input type="email" id="email" class="email" placeholder="Type your email">
+                    <button>Subcribe</button>
+                </div>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>About Flipcart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">careers</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">locations</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">sitemap</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <th>About Policy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Track Your Order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Service Center</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Feedback</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            <div class="box26">
+                <p class="copy">&copy;copyright right reserve 2022</p>
+            </div>
+            <div class="box27">
+                <div class="lox1">
+                    <img src="fblogo.png" class="log" alt="">
+                    <img src="instalogo.png" class="log" alt="">
+                    <img src="twitterlogo.png" class="log" alt="">
+                    <img src="gmail.png" class="log" alt="">
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

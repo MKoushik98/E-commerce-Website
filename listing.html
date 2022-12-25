@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing Products</title>
+    <style>
+        body {
+            background-color: lightcoral;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+
+            position: relative;
+            z-index: 1;
+            background-color: #2874f0;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar .ul .li {
+            display: inline-block;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+            /* padding: 5px 5px; */
+        }
+
+
+
+        ul a {
+            display: none;
+            position: absolute;
+            color: white;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            overflow: hidden;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            z-index: 3;
+
+            padding: 10px;
+
+
+
+        }
+
+        li:hover>ul a {
+            display: block;
+        }
+
+        ul a:hover {
+            background-color: blueviolet;
+        }
+
+        .img {
+            height: 90px;
+            width: 130px;
+            position: absolute;
+            top: 20px;
+
+            display: inline-block;
+
+        }
+
+        input {
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+        }
+
+        .si {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            /* bottom: 10px; */
+
+
+        }
+
+        .fc {
+            /* position:relative; */
+            height: 60px;
+            width: 70px;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .ul .li {
+            display: flex;
+        }
+
+        .li strong {
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: large;
+            margin-top: 15px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center
+        }
+
+        span {
+            color: gold;
+        }
+
+        .fl {
+            height: 70px;
+            width: 70px;
+            margin: 10px 0px;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        p {
+
+            color: crimson;
+            font-style: italic;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            color: blueviolet;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+
+        .section3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        /* span {
+            color: green;
+        } */
+
+        img {
+            height: 300px;
+            width: 350px;
+        }
+
+        p {
+            color: black;
+        }
+
+        .b {
+            color: black;
+            /* font-weight: bold; */
+            font-size: 25px;
+        }
+
+        button {
+            background-color: crimson;
+            border-radius: 10px;
+            color: white;
+            font-family: monospace
+        }
+
+        .section4 {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+
+
+        .section5 {
+            margin: 10px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .box6 {
+            width: 95px;
+        }
+
+        .box10 {
+            width: 120px;
+        }
+
+        .section6 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .box14 {
+            width: 115px;
+        }
+
+        .section7 {
+            margin: 10px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .box18 {
+            width: 117px;
+        }
+
+        .log {
+            height: 30px;
+            width: 30px;
+        }
+
+        .box23 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box26 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box27 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: darkgray;
+        }
+
+        .section9 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .section9 button {
+            margin: 10px 0px;
+        }
+
+        .b {
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            color: darkmagenta;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .buynow a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .newuser img {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+
+        }
+            .li .grocery{
+            display:flex;
+            position: relative;
+            color: white;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- this is for header and navigation -->
+
+        <section class="section">
+            <header>
+                <nav class="navbar">
+                    <div class="icon"><img src="./Listing Page/flipkart-icon (1).webp" class="fl" alt=""></div>
+
+
+                    <ul class="ul">
+                        <li class="li"><strong> FLIPCART</strong><br>Explore <span>Plus</span></li>
+
+                        <li class="li">Home</li>
+                        <li class="li">Mobile
+                            <ul>
+                                <li><a href="android.html"> Android</a></li>
+                                <li><a href="iphone.html"> Iphone</a></li>
+                            </ul>
+                        </li>
+                        <li class="li">Computer
+                            <ul>
+                                <li class=""><a href="windows.html"> Windows</a></li>
+                                <li class=""><a href="macbook.html"> MacBook</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="" class="grocery"> Grocery</a></li>
+                        <li class="li"><input type="search" placeholder="Scarch Product">
+                            <img src="./sicon.jpeg" class="si" alt="">
+                        </li>
+
+                        <li class="li"><a class="newuser" href="Newuser.html"> Sign Up</a></li>
+                        <li class="li"><a class="newuser" href="Loginpage.html"> Login</a></li>
+                        <li class="li"><a class="newuser" href="Mycart.html"> <img src="./cart.jpeg" class="fc"
+                                    alt=""></a></li>
+
+
+
+                    </ul>
+
+
+
+
+                </nav>
+
+            </header>
+        </section>
+        <!-- this for body and listing products -->
+
+        <section class="section1">
+            <div class="box1">
+                <p>SORT</p>
+                <P>|</P>
+                <p>Filter</p>
+            </div>
+        </section>
+        <section class="section2">
+            <h2>Choose Your Fabourite Item</h2>
+        </section>
+        <section class="section3">
+            <div class="box2">
+                <p class="b">Categories</p>
+                <label for="windows" id="windows">Windows</label>
+                <input type="radio" name="filter" id="windows">
+                <br>
+                <label for="linux" id="linux">Linux</label>
+                <input type="radio" name="filter" id="linux">
+                <br>
+                <label for="iphone" id="iphone">Iphone</label>
+                <input type="radio" name="filter" id="iphone">
+                <br>
+                <label for="android" id="android">Android</label>
+                <input type="radio" name="filter" id="android"><br>
+                <button class="scarch">Scarch</button>
+            </div>
+
+            <div class="box3">
+                <img src="./Listing Page/redmi.jpeg" alt="">
+            </div>
+
+            <div class="box4">
+                <p>
+                    <b class="b">REDMI 10(Caribbean Green,64 GB)</b><br>4 GB RAM|64 GB ROM|Expendable<br>upto 1
+                    TB<br>17.02 cm(6.7 inch)
+                    HD+ Display<br>50MP+2MP|5MP Front Camera<br>6000mah Polimar Lithium Battery<br>Qualcomm Snapdragon
+                    680 Processor<br>1 Year Warrenty Phone and<br>6 months for in box<br>accessories
+                </p>
+
+
+            </div>
+
+            <div class="box5">
+                <p><b class="b">Price Rs.9499</b><br><del>14999</del> <span>36% off</span><br>Free
+                    Delivery<br><span>Lowest Price Since
+                        Launch</span></p><br>
+                <button>Details</button>
+                <button>Buy Now</button>
+                <button>Add To Cart</button>
+            </div>
+
+
+        </section>
+
+        <section class="section4">
+            <div class="box6">
+
+            </div>
+
+            <div class="box7">
+                <img src="./Listing Page/mi.jpeg" alt="">
+
+            </div>
+
+            <div class="box8">
+                <p>
+                    <b class="b">REDMI 10(Caribbean Blue,64 GB)</b><br>4 GB RAM|64 GB ROM|Expendable<br>upto 1
+                    TB<br>17.02 cm(6.7 inch)
+                    HD+ Display<br>50MP+2MP|5MP Front Camera<br>6000mah Polimar Lithium Battery<br>Qualcomm Snapdragon
+                    680 Processor<br>1 Year Warrenty Phone and<br>6 months for in box<br>accessories
+                </p>
+
+            </div>
+
+            <div class="box9">
+                <p><b class="b">Price Rs.11559</b><br><del>16999</del> <span>32% off</span><br>Free
+                    Delivery<br><span>Lowest Price Since
+                        Launch</span></p><br>
+                <button>Details</button>
+                <button>Buy Now</button>
+                <button>Add To Cart</button>
+
+            </div>
+
+
+
+
+        </section>
+
+        <section class="section5">
+            <div class="box10">
+
+            </div>
+
+
+            <div class="box11">
+                <img src="./Listing Page/realme30s.jpeg" alt="">
+
+            </div>
+
+            <div class="box12">
+                <p>
+                    <b class="b">REALMI 30S(Caribbean Black,64 GB)</b><br>4 GB RAM|64 GB ROM|Expendable<br>upto 2
+                    TB<br>17.05 cm(6.8 inch)
+                    HD+ Display<br>50MP+2MP|5MP Front Camera<br>7000mah Polimar Lithium Battery<br>Qualcomm Snapdragon
+                    690 Processor<br>1 Year Warrenty Phone and<br>6 months for in box<br>accessories
+                </p>
+
+
+            </div>
+            <div class="box13">
+                <p><b class="b">Price Rs.12999</b><br><del>16999</del> <span>25% off</span><br>Free
+                    Delivery<br><span>Lowest Price Since
+                        Launch</span></p><br>
+                <button>Details</button>
+                <button>Buy Now</button>
+                <button>Add To Cart</button>
+
+            </div>
+        </section>
+        <section class="section6">
+            <div class="box14">
+
+            </div>
+
+
+            <div class="box15">
+                <img src="./Listing Page/realme.jpeg" alt="">
+
+            </div>
+
+            <div class="box16">
+                <p>
+                    <b class="b">REALMI 9i(Caribbean Black,128 GB)</b><br>6 GB RAM|128 GB ROM|Expendable<br>upto 2
+                    TB<br>17.17 cm(7 inch)
+                    HD+ Display<br>68MP+5MP|5MP Front Camera<br>7000mah Polimar Lithium Battery<br>Qualcomm Snapdragon
+                    900 Processor<br>1 Year Warrenty Phone and<br>6 months for in box<br>accessories
+                </p>
+
+
+            </div>
+            <div class="box17">
+                <p><b class="b">Price Rs.17000</b><br><del>21250</del> <span>25% off</span><br>Free
+                    Delivery<br><span>Lowest Price Since
+                        Launch</span></p><br>
+                <button>Details</button>
+                <button>Buy Now</button>
+                <button>Add To Cart</button>
+
+            </div>
+
+
+        </section>
+        <section class="section7">
+            <div class="box18">
+
+            </div>
+
+
+            <div class="box19">
+                <img src="./Listing Page/iphone.jpeg" alt="">
+
+            </div>
+
+            <div class="box20">
+                <p>
+                    <b class="b">IPHONE 12(BROWN-Black,128 GB)</b><br>6 GB RAM|128 GB ROM|Expendable<br>upto 2
+                    TB<br>16.17 cm(6 inch)
+                    HD+ Display<br>10MP+5MP|5MP Front Camera<br>7000mah Polimar Iphone Battery<br>Ipox US Snapdragon
+                    900 Processor<br>1 Year Warrenty Phone and<br>6 months for in box<br>accessories
+                </p>
+
+
+            </div>
+            <div class="box21">
+                <p><b class="b">Price Rs.87635</b><br><del>94500</del> <span>25% off</span><br>Free
+                    Delivery<br><span>Lowest Price Since
+                        Launch</span></p><br>
+                <button>Details</button>
+                <button>Buy Now</button>
+                <button>Add To Cart</button>
+
+            </div>
+
+
+        </section>
+        <section class="section9">
+            <button>GO NEXT</button>
+        </section>
+        
+        <!-- this is for footer -->
+
+        <section class="section8">
+            <footer>
+                <div class="box23">
+                    <div class="lox">
+                        <label for="email">Type Your Email</label>
+                        <input type="email" id="email" class="email" placeholder="Type your email">
+                        <button>Subcribe</button>
+                    </div>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>About Flipcart</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="td1">order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Return policy</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">careers</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">locations</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">sitemap</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th>About Policy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="td1">order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Return policy</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Track Your Order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Service Center</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Feedback</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="box26">
+                    <p class="copy">&copy;copyright right reserve 2022</p>
+                </div>
+                <div class="box27">
+                    <div class="lox1">
+                        <img src="fblogo.png" class="log" alt="">
+                        <img src="instalogo.png" class="log" alt="">
+                        <img src="twitterlogo.png" class="log" alt="">
+                        <img src="gmail.png" class="log" alt="">
+                    </div>
+                </div>
+
+
+            </footer>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

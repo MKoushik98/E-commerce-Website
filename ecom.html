@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+
+            position: relative;
+            z-index: 1;
+            background-color: #2874f0;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar .ul .li {
+            display: inline-block;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+            /* padding: 5px 5px; */
+        }
+
+
+
+        ul a {
+            display: none;
+            position: absolute;
+            color: white;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            overflow: hidden;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            z-index: 3;
+
+            padding: 10px;
+
+
+
+        }
+
+        li:hover>ul a {
+            display: block;
+        }
+
+        ul a:hover {
+            background-color: blueviolet;
+        }
+
+        .img {
+            height: 90px;
+            width: 130px;
+            position: absolute;
+            top: 20px;
+
+            display: inline-block;
+
+        }
+
+        input {
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+        }
+
+        .si {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            /* bottom: 10px; */
+
+
+        }
+
+        .fc {
+            /* position:relative; */
+            height: 60px;
+            width: 70px;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .ul .li {
+            display: flex;
+        }
+
+        .li strong {
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: large;
+            margin-top: 15px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center
+        }
+
+        span {
+            color: gold;
+        }
+
+        .fl {
+            height: 70px;
+            width: 70px;
+            margin: 10px 0px;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            /* width: 60vw; */
+            /* border: 3px solid red; */
+            background-image: url(./laptop1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 60vw;
+            height: 50vh;
+            animation-name: koushik;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes koushik {
+            0% {
+                background-image: url(./laptop1.jpg);
+
+            }
+
+            20% {
+                background-image: url(./grocery.jpg);
+            }
+
+            50% {
+                background-image: url(./mobile1.jpg);
+            }
+
+            80% {
+                background-image: url(./tshirt.jpeg);
+            }
+
+            100% {
+                background-image: url(./headphone.png);
+            }
+
+        }
+
+        .buynow {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+
+            height: 45px;
+            width: 100px;
+            position: relative;
+            top: 130px;
+            border-radius: 15px;
+            border-style: none;
+        }
+
+        .buynow:hover {
+            box-shadow: 0px 0px 12px 12px crimson;
+
+        }
+
+        .shop1 {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+
+            height: 45px;
+            width: 100px;
+            position: relative;
+
+            border-radius: 15px;
+            border-style: none;
+            position: relative;
+            top: 100px;
+
+        }
+
+        .shop2 {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+
+            height: 45px;
+            width: 100px;
+            position: relative;
+
+            border-radius: 15px;
+            border-style: none;
+            position: relative;
+            top: 100px;
+
+        }
+
+        .shop1:hover,
+        .shop2:hover {
+            box-shadow: 0px 0px 12px 12px green;
+
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+
+        }
+
+        .box2 {
+            height: 40vh;
+            width: 70vh;
+            background-image: url(./sale.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 10px 10px lightseagreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box3 {
+            height: 40vh;
+            width: 70vh;
+            background-image: url(./Big\ Sale.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 10px 10px lightslategray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+
+        }
+
+        .image {
+            height: 200px;
+            width: 250px;
+
+        }
+
+        .box4 {
+            flex-basis: 20%;
+
+
+        }
+
+        .oppo,
+        .acer,
+        .iphone,
+        .macbook {
+            margin-top: 5px;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            background-color: crimson;
+            border-style: none;
+            border-radius: 15px;
+            width: 60px;
+            height: 40px;
+            margin-left: 90px;
+
+
+
+
+
+        }
+
+        .oppo a,
+        .acer a,
+        .iphone a,
+        .macbook a {
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+
+        .log {
+            height: 30px;
+            width: 30px;
+        }
+
+        .box23 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box26 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box27 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: darkgray;
+            margin-top: 5px;
+        }
+
+        button {
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: bold;
+            font-family: sans-serif;
+            border-style: none;
+            height: 30px;
+            cursor: pointer;
+            width: 80px;
+        }
+
+        button:hover {
+            font-weight: bold;
+            box-shadow: 0px 0px 10px 10px blue;
+        }
+
+        strong span {
+            color: blue;
+        }
+
+        strong {
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .shop2 a {
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+
+        .shop1 a {
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+
+
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .buynow a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .newuser img {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+
+        }
+        .li .grocery{
+            display:flex;
+            position: relative;
+            color: white;
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <!-- This is for navigation bar -->
+
+        <nav class="navbar">
+            <div class="icon"><img src="./Listing Page/flipkart-icon (1).webp" class="fl" alt=""></div>
+
+
+            <ul class="ul">
+                <li class="li"><strong> FLIPCART</strong><br>Explore <span>Plus</span></li>
+
+                <li class="li">Home</li>
+                <li class="li">Mobile
+                    <ul>
+                        <li><a href="android.html"> Android</a></li>
+                        <li><a href="iphone.html"> Iphone</a></li>
+                    </ul>
+                </li>
+                <li class="li">Computer
+                    <ul>
+                        <li class=""><a href="windows.html"> Windows</a></li>
+                        <li class=""><a href="macbook.html"> MacBook</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a class="grocery" href="grocery.html"> Grocery</a></li>
+                <li class="li"><input type="search" placeholder="Scarch Product">
+                    <img src="./sicon.jpeg" class="si" alt="">
+                </li>
+
+                <li class="li"><a class="newuser" href="Newuser.html">Sign Up</a></li>
+                <li class="li"><a class="newuser" href="Loginpage.html">Login</a></li>
+                <li class="li"> <a class="newuser" href="Mycart.html"><img src="./cart.jpeg" class="fc" alt=""></a></li>
+
+
+
+            </ul>
+
+
+
+
+        </nav>
+
+        <section class="section1">
+            <div class="box1">
+                <button class="buynow"><a href="listing.html"> Buy Now</a></button>
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <!-- this is for 2nd section -->
+
+        <section class="section2">
+            <div class="box2">
+                <button class="shop1"><a href="deals.html"> Shop Now</a></button>
+
+
+            </div>
+
+            <div class="box3">
+                <button class="shop2"><a href="sale.html"> Shop Now</a></button>
+
+
+            </div>
+
+
+
+        </section>
+        <!-- this is for product listing and section3 -->
+
+        <section class="section3">
+            <div class="box4"><img src="./Listing Page/oppo.jpeg" class="image" alt=""><br>
+                <strong>F19 Pro 5G Space Black <br>
+                    6 GB|128 GB
+                    Rs.17,490 <del>29,990</del> <br><span> 41% Off</span></strong> <br><br>
+                <button class="oppo"><a href="Buynow.html"> Buy Now </a></button>
+                <button class="oppo"><a href="details.html"> Deatils</a></button>
+                <button class="oppo"><a href="Mycart.html">Cart</a></button>
+            </div>
+            <div class="box4"><img src="./Listing Page/acer.jpeg" class="image" alt=""><br>
+                <strong>ACER Vivobook 15(2022) <br> GB|1 TB|SSD-512 GB
+                    Rs.33,900 <del> 45,990</del><br> <span>26% Off </span> </strong> <br><br>
+                <button class="acer"><a href="Buynow10.html"> Buy Now</a></button>
+                <button class="acer"><a href="details10.html"> Details</a></button>
+                <button class="acer"><a href="Mycart.html">Cart</a></button>
+            </div>
+            <div class="box4"><img src="./Listing Page/iphone.jpeg" class="image" alt=""><br>
+                <strong>APPLE IPHONE 11 <br>(Brown,64 GB)
+                    4 GB|64 GB <br>
+                    Rs.40,999 <del> 43,900</del> <span> 9% Off </span></strong> <br><br>
+                <button class="iphone"><a href="Buynow5.html"> Buy Now</a></button>
+                <button class="iphone"><a href="details5.html"> Deatils</a></button>
+                <button class="iphone"><a href="Mycart.html">Cart</a></button>
+
+            </div>
+            <div class="box4"><img src="./Listing Page/macbook13.jpeg" class="image" alt=""><br>
+                <strong>
+                    APPLE MacBook Air M1 <br>
+                    16 GB|1 TB|SSD-256 GB <br>
+                    Rs.1,12,900
+                </strong><br><br>
+                <button class="macbook"><a href="Buynow17.html"> Buy Now</a></button>
+                <button class="macbook"><a href="details17.html"> Details</a></button>
+                <button class="macbook"><a href="Mycart.html">Cart</a></button>
+            </div>
+
+
+        </section>
+
+        <!-- this is for footer -->
+
+        <footer>
+
+            <div class="box23">
+                <div class="lox">
+                    <label for="email">Type Your Email</label>
+                    <input type="email" id="email" class="email" placeholder="Type your email">
+                    <button>Subcribe</button>
+                </div>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>About Flipcart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">careers</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">locations</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">sitemap</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <th>About Policy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Track Your Order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Service Center</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Feedback</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="box26">
+                <p class="copy">&copy;copyright right reserve 2022</p>
+            </div>
+            <div class="box27">
+                <div class="lox1">
+                    <img src="fblogo.png" class="log" alt="">
+                    <img src="instalogo.png" class="log" alt="">
+                    <img src="twitterlogo.png" class="log" alt="">
+                    <img src="gmail.png" class="log" alt="">
+                </div>
+            </div>
+    </div>
+
+</body>
+
+</html>

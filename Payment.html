@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        strong {
+            color: green;
+            font-family: sans-serif;
+            box-shadow: 0px 0px 10px 10px crimson;
+        }
+
+        .section2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            background-color: crimson;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            height: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        label {
+            color: blueviolet;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .section3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .ppe {
+            height: 60px;
+            width: 70px;
+        }
+        button .pay{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section">
+            <h2><strong>Choose Your Payment Option</strong></h2>
+        </section>
+        <section class="section1">
+            <div class="box">
+                <label for="UPI" id="upi">UPI</label>
+                <input type="radio" name="Select" id="upi">
+                <br><br><br>
+                <label for="Phone Pe" id="phonepe">Phone Pe</label>
+                <input type="radio" name="Select" id="phonepe">
+                <br><br><br>
+
+
+                <label for="Wallets" id="wallets">Wallets</label>
+                <input type="radio" name="Select" id="wallets">
+                <br><br><br>
+                <label for="Credit" id="credit">Credit/Debit/ATM</label>
+                <input type="radio" name="Select" id="credit">
+                <br><br><br>
+
+
+                <label for="EMI" id="emi">EMI</label>
+                <input type="radio" name="Select" id="emi">
+                <br><br><br>
+                <label for="Cash" id="cash">Cash On Delivary</label>
+                <input type="radio" name="Select" id="cash">
+                <br><br><br>
+
+
+                <label for="Gift" id="gift">Gift Card</label>
+                <input type="radio" name="Select" id="gift">
+                <br><br><br>
+                <label for="Other" id="other">Other Option</label>
+                <input type="radio" name="Select" id="other">
+                <br><br><br>
+
+
+
+            </div>
+        </section>
+        <section class="section3">
+            <img src="./Listing Page/phone pe.jpeg" class="ppe" alt="">
+            <img src="./Listing Page/Bharatpe.png" class="ppe" alt="">
+            <img src="./Listing Page/g pay.png" class="ppe" alt="">
+            <img src="./Listing Page/pay pal.jpeg" class="ppe" alt="">
+            <img src="./Listing Page/Master card (1).jpeg" class="ppe" alt="">
+        </section>
+        <br><br><br>
+
+
+
+
+        <section class="section2">
+            <button><a href="Account details.html" class="pay"> Make Payment</a></button>
+        </section>
+    </div>
+
+</body>
+
+</html>

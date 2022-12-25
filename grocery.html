@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Items</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+
+            position: relative;
+            z-index: 1;
+            background-color: #2874f0;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar .ul .li {
+            display: inline-block;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+            /* padding: 5px 5px; */
+        }
+
+
+
+        ul a {
+            display: none;
+            position: absolute;
+            color: white;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            overflow: hidden;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            z-index: 3;
+
+            padding: 10px;
+
+
+
+        }
+
+        li:hover>ul a {
+            display: block;
+        }
+
+        ul a:hover {
+            background-color: blueviolet;
+        }
+
+        .img {
+            height: 90px;
+            width: 130px;
+            position: absolute;
+            top: 20px;
+
+            display: inline-block;
+
+        }
+
+        input {
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+        }
+
+        .si {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            /* bottom: 10px; */
+
+
+        }
+
+        .fc {
+            /* position:relative; */
+            height: 60px;
+            width: 70px;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .ul .li {
+            display: flex;
+        }
+
+        .li strong {
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: large;
+            margin-top: 15px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center
+        }
+
+        span {
+            color: gold;
+        }
+
+        .fl {
+            height: 70px;
+            width: 70px;
+            margin: 10px 0px;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .buynow a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .newuser img {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+
+        }
+
+        .set img {
+            height: 250px;
+            width: 200px;
+        }
+
+        .part {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            box-shadow: 0px 0px 10px 10px lightgrey;
+        }
+
+        .set {
+            flex-basis: 20%;
+            margin: 10px 0px;
+
+        }
+
+        .set button,
+        button a {
+            margin: 10px 0px;
+            color: white;
+            font-size: bold;
+            font-family: sans-serif;
+            border-radius: 10px;
+            border-style: none;
+            width: 80px;
+            height: 30px;
+            background-color: crimson;
+            text-decoration: none;
+
+        }
+
+        .end {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .end button
+        {
+            background-color: crimson;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+
+
+        }
+        .box23{
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        footer{
+            margin-top: 20px;
+            background-color: gray;
+        }
+        footer button{
+            background-color: crimson;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            border-style: none;
+            border-radius: 10px;
+            width:70px;
+            height: 30px;
+        }
+        footer img{
+            height: 30px;
+            width: 30px;
+        }
+        .box26{
+            margin-top:10px ;
+            display: flex;
+            justify-content: center;
+        }
+        .lox1{
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .set span{
+            color: blue;
+        }
+            .li .grocery{
+            display:flex;
+            position: relative;
+            color: white;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <nav class="navbar">
+            <div class="icon"><img src="./Listing Page/flipkart-icon (1).webp" class="fl" alt=""></div>
+
+
+            <ul class="ul">
+                <li class="li"><strong> FLIPCART</strong><br>Explore <span>Plus</span></li>
+
+                <li class="li">Home</li>
+                <li class="li">Mobile
+                    <ul>
+                        <li><a href="android.html"> Android</a></li>
+                        <li><a href="iphone.html"> Iphone</a></li>
+                    </ul>
+                </li>
+                <li class="li">Computer
+                    <ul>
+                        <li class=""><a href="windows.html"> Windows</a></li>
+                        <li class=""><a href="macbook.html"> MacBook</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="grocery.html" class="grocery"> Grocery</a></li>
+                <li class="li"><input type="search" placeholder="Scarch Product">
+                    <img src="./sicon.jpeg" class="si" alt="">
+                </li>
+
+                <li class="li"><a class="newuser" href="Newuser.html">Sign Up</a></li>
+                <li class="li"><a class="newuser" href="Loginpage.html">Login</a></li>
+                <li class="li"> <a class="newuser" href="Mycart.html"><img src="./cart.jpeg" class="fc" alt=""></a></li>
+
+
+
+            </ul>
+
+
+
+
+        </nav>
+        <div class="part">
+            <div class="set"></div>
+            <div class="set"><img src="./Listing Page/fortune bason.jpeg" alt=""></div>
+            <div class="set">Fortune Bason 1Kg<br>MRP <del>140</del> 95 <span>32% Off</span><br>Free Delivery on above
+                order Rs.599</div>
+            <div class="set">
+                <label for="add">Add:-</label>
+                <select name="Add" id="add">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="more">more</option>
+                </select>
+            </div>
+            <div class="set"><button><a href=""> Buy Now</a></button>
+                <br><button><a href="Mycart.html"> Add To Cart</a></button>
+            </div>
+
+            <div class="set"></div>
+            <div class="set"><img src="./Listing Page/nutrela soya.jpeg" alt=""></div>
+            <div class="set">Nutrala Soya Chunks 1Kg <br>MRP <del>210</del> 123 <span>41% Off</span></div>
+            <div class="set">
+                <label for="add">Add:-</label>
+                <select name="Add" id="add">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="more">more</option>
+                </select>
+            </div>
+            <div class="set">
+                <button><a href=""> Buy Now</a></button>
+                <br><button><a href="Mycart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="set"></div>
+            <div class="set"><img src="./Listing Page/motor dal.jpeg" alt=""></div>
+            <div class="set">Safe Harvest Red Masoor Dal(500 g) <br>MRP <del> 105</del> 82 <span>21% Off</span></div>
+            <div class="set"><label for="add">Add:-</label>
+                <select name="Add" id="add">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="more">more</option>
+                </select>
+            </div>
+            <div class="set">
+                <button><a href=""> Buy Now</a></button>
+                <br><button><a href="Mycart.html"> Add To Cart</a></button>
+            </div>
+
+            <div class="set"></div>
+            <div class="set"><img src="./Listing Page/chola.jpeg" alt=""></div>
+            <div class="set">Safe Harvest Brown Bengal Gram(Whole)<br>(Pesticide Free)(500 g) <br>MRP <del>90</del> 57
+                <span>36% Off</span>
+            </div>
+            <div class="set"><label for="add">Add:-</label>
+                <select name="Add" id="add">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="more">more</option>
+                </select>
+            </div>
+            <div class="set">
+                <button><a href=""> Buy Now</a></button>
+                <br><button><a href="Mycart.html"> Add To Cart</a></button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="end"> <button><a href="ecom.html">Back To Home</a></button></div>
+
+        <footer class="footer">
+            <div class="box23">
+                <div class="lox">
+                    <label for="email">Type Your Email</label>
+                    <input type="email" id="email" class="email" placeholder="Type your email">
+                    <button>Subcribe</button>
+                </div>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>About Flipcart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">careers</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">locations</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">sitemap</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <th>About Policy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Track Your Order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Service Center</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Feedback</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="box26">
+                <p class="copy">&copy;copyright right reserve 2022</p>
+            </div>
+            <div class="box27">
+                <div class="lox1">
+                    <img src="fblogo.png" class="log" alt="">
+                    <img src="instalogo.png" class="log" alt="">
+                    <img src="twitterlogo.png" class="log" alt="">
+                    <img src="gmail.png" class="log" alt="">
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

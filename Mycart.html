@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        header {
+            background-color: #2874f0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+
+        button {
+            height: 20px;
+            margin-top: 25px;
+            margin: 25px 10px;
+            color: #2874f0;
+            background-color: white;
+            border-radius: 10px;
+            font-family: sans-serif;
+            border-style: none;
+
+        }
+
+        h2 {
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .section {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 10px 10px gray;
+        }
+
+        img {
+            height: 200px;
+            width: 150px;
+        }
+
+        .save,
+        .remove {
+
+            background-color: aqua;
+            font-weight: bold;
+
+        }
+
+        .section1 {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 10px 10px gray;
+        }
+
+        .section2 {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 10px 10px gray;
+
+        }
+
+        .section3 {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 10px 10px gray;
+
+        }
+
+        button a {
+            color: #2874f0;
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+
+        .itemscart {
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-left: 1000px;
+            margin-top: 30px;
+            box-shadow: 0px 0px 10px 10px lightcoral;
+
+        }
+
+        .section4 {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .strong {
+
+            color: red;
+            font-weight: bold;
+            font-size: large;
+            box-shadow: 0px 0px 10px 10px black;
+
+        }
+
+        .section5 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gohome {
+            color: white;
+            background-color: crimson;
+            border-style: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .gohome a {
+            color: white;
+            text-decoration: none;
+            background-color: crimson;
+            border-style: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this is for header -->
+    <header>
+        <button><a href="ecom.html"> Back</a></button>
+        <h2>My Cart</h2>
+        <p class="itemscart">There Are 4 Items In Your Cart </p>
+    </header>
+
+    <!-- this is for body listing products -->
+    <section class="section">
+        <div class="box"> <a href="Buynow.html"><img src="./Listing Page/oppo.jpeg" alt=""></a></div>
+        <div class="box">
+            <p><b> OPPO F19 pro 5G (Space Black,128 GB)</b><br>
+                Rs.17,490 <del>29,990</del> <span>41% Off</span>
+                <br><button>4.3*</button> 20,952 ratings
+            </p>
+        </div>
+        <div><label for="qtn"> Qtn:</label>
+            <select name="qtn" id="qtn">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="more">more</option>
+
+
+
+            </select>
+
+
+        </div>
+        <strong>Delivery in 2 Days</strong>
+        <button class="save">Save For Later</button>
+        <button class="remove">Remove</button>
+    </section>
+    <section class="section1">
+
+        <div class="box"><a href="Buynow10.html"> <img src="./Listing Page/acer.jpeg" alt=""></a></div>
+        <div class="box">
+            <p><b>ACER Vivobook 15(2022)</b><br>
+                Rs.33,900 <del>45,990</del> <span>26% Off</span>
+                <br><button>4.5*</button> 35,100 ratings
+            </p>
+        </div>
+        <div><label for="qtn"> Qtn:</label>
+            <select name="qtn" id="qtn">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="more">more</option>
+
+
+
+            </select>
+
+
+        </div>
+        <strong>Delivery in 7 Days</strong>
+        <button class="save">Save For Later</button>
+        <button class="remove">Remove</button>
+
+
+
+
+
+    </section>
+    <section class="section2">
+        <div class="box"><a href="Buynow5.html"> <img src="./Listing Page/iphone.jpeg" alt=""></a></div>
+        <div class="box">
+            <p><b>APPLE IPHONE 11(Grey,64 GB)</b><br>
+                Rs.40,999 <br><del>43,900</del> <span>9% Off</span>
+                <br><button>4.7*</button> 50,100 ratings
+            </p>
+        </div>
+        <div><label for="qtn"> Qtn:</label>
+            <select name="qtn" id="qtn">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="more">more</option>
+
+
+
+            </select>
+
+
+        </div>
+        <strong>Delivery in 6 Days</strong>
+        <button class="save">Save For Later</button>
+        <button class="remove">Remove</button>
+
+
+    </section>
+    <section class="section3">
+
+        <div class="box"><a href="Buynow17.html"> <img src="./Listing Page/macbook12.jpeg" alt=""></a></div>
+        <div class="box">
+            <p><b>APPLE MacBook Air M1</b><br>
+                Rs.1,12,900
+                <br><button>4.7*</button> 90,000 ratings
+            </p>
+        </div>
+        <div><label for="qtn"> Qtn:</label>
+            <select name="qtn" id="qtn">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="more">more</option>
+
+
+
+            </select>
+
+
+        </div>
+        <strong>Delivery in 10 Days</strong>
+        <button class="save">Save For Later</button>
+        <button class="remove">Remove</button>
+
+
+
+
+
+    </section>
+    <section class="section5">
+        <button class="gohome"><a href="ecom.html"> Go Home</a></button>
+    </section>
+    <section class="section4">
+        <strong class="strong">Click The Image To Go Direct Buy Now or Go To Buy Now Page.</strong>
+    </section>
+
+
+</body>
+
+</html>

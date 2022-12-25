@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+
+            position: relative;
+            z-index: 1;
+            background-color: #2874f0;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar .ul .li {
+            display: inline-block;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+            /* padding: 5px 5px; */
+        }
+
+
+
+        ul a {
+            display: none;
+            position: absolute;
+            color: white;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            overflow: hidden;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            z-index: 3;
+
+            padding: 10px;
+
+
+
+        }
+
+        li:hover>ul a {
+            display: block;
+        }
+
+        ul a:hover {
+            background-color: blueviolet;
+        }
+
+        .img {
+            height: 90px;
+            width: 130px;
+            position: absolute;
+            top: 20px;
+
+            display: inline-block;
+
+        }
+
+        input {
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+        }
+
+        .si {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            /* bottom: 10px; */
+
+
+        }
+
+        .fc {
+            /* position:relative; */
+            height: 60px;
+            width: 70px;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .ul .li {
+            display: flex;
+        }
+
+        .li strong {
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: large;
+            margin-top: 15px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center
+        }
+
+        span {
+            color: gold;
+        }
+
+        .fl {
+            height: 70px;
+            width: 70px;
+            margin: 10px 0px;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex-basis: 25%;
+
+        }
+
+        button {
+            background-color: crimson;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 10px;
+            height: 35px;
+            font-weight: bold;
+            /* border-right: none; */
+            border-style: none;
+        }
+
+        button:hover {
+            box-shadow: 0px 0px 10px 10px blueviolet;
+        }
+
+        /* span {
+            color: blue;
+        } */
+        p span {
+            color: blue;
+        }
+
+        .box1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .box1 p {
+            color: brown;
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .log {
+            height: 30px;
+            width: 30px;
+        }
+
+        .box23 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box26 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box27 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: darkgray;
+        }
+
+        .btn {
+            background-color: aqua;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            border-style: none;
+
+        }
+
+        .b {
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            color: darkmagenta;
+        }
+
+        .section4 {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0px;
+
+        }
+
+        button a {
+            background-color: crimson;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 10px;
+            height: 35px;
+            font-weight: bold;
+            /* border-right: none; */
+            border-style: none;
+            text-decoration: none;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .buynow a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .newuser img {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+
+        }
+            .li .grocery{
+            display:flex;
+            position: relative;
+            color: white;
+           
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <!-- this is for header and navigation -->
+
+        <section class="section">
+            <header>
+                <nav class="navbar">
+                    <div class="icon"><img src="./Listing Page/flipkart-icon (1).webp" class="fl" alt=""></div>
+
+
+                    <ul class="ul">
+                        <li class="li"><strong> FLIPCART</strong><br>Explore <span>Plus</span></li>
+
+                        <li class="li">Home</li>
+                        <li class="li">Mobile
+                            <ul>
+                                <li><a href="android.html"> Android</a></li>
+                                <li><a href="iphone.html"> Iphone</a></li>
+                            </ul>
+                        </li>
+                        <li class="li">Computer
+                            <ul>
+                                <li class=""><a href="windows.html"> Windows</a></li>
+                                <li class=""><a href="macbook.html"> MacBook</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="grocery.html" class="grocery"> Grocery</a></li>
+                        <li class="li"><input type="search" placeholder="Scarch Product">
+                            <img src="./sicon.jpeg" class="si" alt="">
+                        </li>
+
+                        <li class="li"><a class="newuser" href="Newuser.html"> Sign Up</a></li>
+                        <li class="li"><a class="newuser" href="Loginpage.html"> Login</a></li>
+                        <li class="li"><a class="newuser" href="Mycart.html"> <img src="./cart.jpeg" class="fc"
+                                    alt=""></a></li>
+
+
+
+                    </ul>
+
+
+
+
+                </nav>
+
+            </header>
+        </section>
+        <!-- this is for body and listing android products -->
+
+        <section class="section1">
+            <div class="box1">
+                <p>SORT</p>
+                <P>|</P>
+                <p>Filter</p>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="box">
+                <p class="b">Categories</p>
+                <label for="windows" id="windows">Windows</label>
+                <input type="radio" name="filter" id="windows">
+                <br>
+                <label for="linux" id="linux">Linux</label>
+                <input type="radio" name="filter" id="linux">
+                <br>
+                <label for="iphone" id="iphone">Iphone</label>
+                <input type="radio" name="filter" id="iphone">
+                <br>
+                <label for="android" id="android">Android</label>
+                <input type="radio" name="filter" id="android"><br>
+                <button class="scarch">Scarch</button>
+            </div>
+
+            <div class="box">
+                <img src="./Listing Page/oppo.jpeg" alt="">
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">OPPO F19 Pro 5G Space Black</b><br>128 GB|6 GB|Mediatech Demecity 800U<br>Rear-48 MP|8
+                    MP
+                    |2 MP|2 MP|7 inch screen <br>Front camera-16 MP|Battery-4310 mah<br>One year warenty in phone<br>6
+                    months warenty in box accessories
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+
+            <div class="box">
+                <p><b class="b">Price Rs.17,490</b><br><del>29,990</del> <span>41% off</span><br>Emi starts
+                    from Rs.2,915/month.<br><span>View Plans<br>+49 Secured Packing Fee.
+                    </span>
+                </p><br>
+                <button><a class="abd" href="details.html"> Details</a></button>
+                <button><a class="abd" href="Buynow.html"> Buy Now</a></button>
+                <button><a class="abd" href="Mycart.html"> Add To Cart</a></button>
+            </div>
+
+
+
+
+
+            <div class="box">
+
+            </div>
+
+            <div class="box">
+                <img src="./Listing Page/moto.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">MOTO H5+ 4G Black</b><br>4 GB|64 GB |Black
+                    <br>Snapdragon 500 processor|Battery-6000 mah<br>Rear Camera-30 MP+2 MP+2 MP<br>Front
+                    Camera-16MP|6.50 inch screen <br>One year Warenty in phone<br>6 months in box accessories
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+
+                </p>
+
+            </div>
+
+            <div class="box">
+                <p><b class="b">Price Rs.15,999</b><br><del>19,999</del> <span>20% off</span><br>No cost EMI
+                    Starts Rs.1,125/month<br><span>View Plans
+                    </span><br><span>+49 Secured Packing Fee</span></p><br>
+                <button><a class="abd" href="details1.html"> Details</a></button>
+                <button><a class="abd" href="Buynow1.html"> Buy Now</a></button>
+                <button><a class="abd" href="Mycart.html"> Add To Cart</a></button>
+
+            </div>
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./Listing Page/vivo.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">VIVO V30 5G SkyBlue</b><br>6GB|128GB|Upto-2 TB|Snapdragon 688<br>Battery-6000 mah|6.55
+                    inch Display|<br>One Year Warenty on Phone <br>6 months in Box Accessories
+
+
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+
+                </p>
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.29,000</b><br>EMI From
+                    Rs.3,914/month<br><span>View Plans
+                    </span><br><span>+49 Secured Packing Fee</span>
+                </p><br>
+                <button><a class="abd" href="details2.html"> Details</a></button>
+                <button><a class="abd" href="Buynow2.html"> Buy Now</a></button>
+                <button><a class="abd" href="Mycart.html"> Add To Cart</a></button>
+
+            </div>
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./Listing Page/ONE PLUS (1).jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">ONE PLUS NORD CE 2 LITE 5G</b><br>Black Dusk|6 GB|128 GB|Rear Camera-64MP
+                    <br>Display-6.59|Battery-5000 mah <br>One Year warenty on phone <br>6 months on accessories box
+
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.19,999</b><br><del>20,999</del> <span>5% off</span><br>EMI From
+                    Rs.4,333/month<br><span>View Plans
+                    </span> <br><span>+49 Secured Packing Fee</span></p><br>
+                <button><a href="details3.html" class="abd">Details</a></button>
+                <button><a href="Buynow3.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd">Add To Cart</a></button>
+
+            </div>
+
+
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./Listing Page/realme.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">REALME 9i 5G soulful Blue</b><br>4 GB|64 GB|Mediatech Dimencity 810 Processor<br>6.6
+                    inch screen
+                    +IPS LCD Display
+                    <br>Rear Camera-50 MP+2 MP+2 MP<br>Front Camera-8 MP|Battery-5000 mah<br>One Year Warrenty On
+                    Phone<br>6 months On Box Accessories
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.14,999</b><br><del>17,999</del> <span>16% off</span><br>EMI From
+                    Rs.520/month<br><span>View Plans</span>
+                    <br>
+                    <span>+49 Secured Packing Fee</span>
+                </p><br>
+                <button><a href="details4.html" class="abd"> Details</a></button>
+                <button><a href="Buynow4.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+        </section>
+        <section class="section4">
+            <button><a href="#">Go Next</a></button>
+        </section>
+
+        <!-- this is for footer -->
+        <footer>
+
+            <div class="box23">
+                <div class="lox">
+                    <label for="email">Type Your Email</label>
+                    <input type="email" id="email" class="email" placeholder="Type your email">
+                    <button>Subcribe</button>
+                </div>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>About Flipcart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">careers</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">locations</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">sitemap</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <th>About Policy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Track Your Order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Service Center</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Feedback</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            <div class="box26">
+                <p class="copy">&copy;copyright right reserve 2022</p>
+            </div>
+            <div class="box27">
+                <div class="lox1">
+                    <img src="fblogo.png" class="log" alt="">
+                    <img src="instalogo.png" class="log" alt="">
+                    <img src="twitterlogo.png" class="log" alt="">
+                    <img src="gmail.png" class="log" alt="">
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

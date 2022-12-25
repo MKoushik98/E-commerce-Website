@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Upto 65% Off</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+
+            position: relative;
+            z-index: 1;
+            background-color: #2874f0;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar .ul .li {
+            display: inline-block;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+            /* padding: 5px 5px; */
+        }
+
+
+
+        ul a {
+            display: none;
+            position: absolute;
+            color: white;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            overflow: hidden;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            z-index: 3;
+
+            padding: 10px;
+
+
+
+        }
+
+        li:hover>ul a {
+            display: block;
+        }
+
+        ul a:hover {
+            background-color: blueviolet;
+        }
+
+        .img {
+            height: 90px;
+            width: 130px;
+            position: absolute;
+            top: 20px;
+
+            display: inline-block;
+
+        }
+
+        input {
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+        }
+
+        .si {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            /* bottom: 10px; */
+
+
+        }
+
+        .fc {
+            /* position:relative; */
+            height: 60px;
+            width: 70px;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .ul .li {
+            display: flex;
+        }
+
+        .li strong {
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: large;
+            margin-top: 15px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center
+        }
+
+        span {
+            color: gold;
+        }
+
+        .fl {
+            height: 70px;
+            width: 70px;
+            margin: 10px 0px;
+        }
+
+        .box2 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            box-shadow: 0px 0px 12px 12px lime;
+        }
+
+        h1 {
+
+            box-shadow: 0px 0px 12px 12px blueviolet;
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .h1 {
+            position: relative;
+            top: 15px;
+            ;
+        }
+
+        .h2 {
+            position: relative;
+            bottom: 15px;
+        }
+
+        .h3 {
+            position: relative;
+            top: 15px;
+        }
+
+        .h4 {
+            position: relative;
+            bottom: 15px;
+        }
+
+        .h5 {
+            position: relative;
+            top: 15px;
+        }
+
+        .img1 {
+            height: 300px;
+            width: 250px;
+
+        }
+
+        .box3 {
+            margin: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box4 {
+            flex-basis: 25%;
+            /* margin: 10px 0px; */
+            margin: 25px 0px;
+            box-shadow: 0px 0px 10px 10px green;
+            text-align: center;
+        }
+
+        span {
+            color: blue;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px dashed darkmagenta;
+        }
+
+        button {
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-style: none;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            font-weight: bold;
+            box-shadow: 0px 0px 10px 10px blue;
+        }
+
+        .log {
+            height: 30px;
+            width: 30px;
+        }
+
+        .box23 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box26 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box27 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: darkgray;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .buynow a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .newuser img {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+
+        }
+            .li .grocery{
+            display:flex;
+            position: relative;
+            color: white;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- this is for header and navigation -->
+
+        <section class="section">
+            <header>
+                <nav class="navbar">
+                    <div class="icon"><img src="./Listing Page/flipkart-icon (1).webp" class="fl" alt=""></div>
+
+
+                    <ul class="ul">
+                        <li class="li"><strong> FLIPCART</strong><br>Explore <span>Plus</span></li>
+
+                        <li class="li">Home</li>
+                        <li class="li">Mobile
+                            <ul>
+                                <li><a href="android.html"> Android</a></li>
+                                <li><a href="iphone.html"> Iphone</a></li>
+                            </ul>
+                        </li>
+                        <li class="li">Computer
+                            <ul>
+                                <li class=""><a href="windows.html"> Windows</a></li>
+                                <li class=""><a href="macbook.html"> MacBook</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="grocery.html" class="grocery"> Grocery</a></li>
+                        <li class="li"><input type="search" placeholder="Scarch Product">
+                            <img src="./sicon.jpeg" class="si" alt="">
+                        </li>
+
+                        <li class="li"><a class="newuser" href="Newuser.html"> Sign Up</a></li>
+                        <li class="li"><a class="newuser" href="Newuser.html">Login</a></li>
+                        <li class="li"><a class="newuser" href=""><img src="./cart.jpeg" class="fc" alt=""></a></li>
+
+
+
+                    </ul>
+
+
+
+
+                </nav>
+            </header>
+        </section>
+        <!-- this for body and 2nd section for listing products  -->
+        <section class="section1">
+            <div class="box2">
+                <h1 class="h1">Flash Sale <br>Upto 65% Off</h1>
+                <h1 class="h2">Flash Sale <br>Upto 65% Off</h1>
+                <h1 class="h3">Flash Sale <br>Upto 65% Off</h1>
+                <h1 class="h4">Flash Sale <br>Upto 65% Off</h1>
+                <h1 class="h5">Flash Sale <br>Upto 65% Off</h1>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="box3">
+                <div class="box4"><img src="Srikanta-By-Sarat-Chandra-Chattopadyay-Book-Image.jpg" class="img1" alt="">
+                    <p>Bengali Classic Fiction Book| Srikanta<br>|Sarat Chandra Chattopadhyay<br>(Hard cover Bengali
+                        Book)<br><span>62% Off</span> <del>400</del> Rs.150</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="images (1) (4).jpeg" class="img1" alt="">
+                    <p>Samsung Metro 313 Dual sim Black<br>RAM-4 MB|ROM-2.27 MB|Camera-0.3MP<br>Display-0.2
+                        Inch|Battery-1000mah<br><span>65% Off</span> <del>2840</del> Rs.1846</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="images (1) (5).jpeg" class="img1" alt="">
+                    <p>Intex Ultra G3 Black<br>RAM-10MB|ROM-10MB|Camera-0.3MP<br>Display-2.8
+                        Inch|Battery-1700mah<br><span>60%</span> <del>2000</del> Rs.800</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="images (1) (10).jpeg" class="img1" alt="">
+                    <p>Logitech Wairless Keyboard(White)<br>
+                        For Computers|Laptops|Mac|tablets
+                        <br>Interface Wairless<br><span>55% Off</span> <del>3495</del>
+                        Rs.1572
+                    </p>
+
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="istockphoto-1166985803-612x612.jpg" class="img1" alt="">
+                    <p>Hiflyers Striped Man Track Suit<br>Blue|Striped|cotton fleece Blend<br>Soft and Warm due ti
+                        rising inside<br><span>20% Off</span> <del>2149</del> Rs.1699</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="images (31).jpeg" class="img1" alt="">
+                    <p>Milton Thermosteel 1000 Flip Lid<br>1000 ml Bottle of 1 piece <br>double insulated
+                        wall<br><span>20% Off</span> <del>1205</del> Rs.964</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="images (1) (22).jpeg" class="img1" alt="">
+                    <p>NIKE Revolution 6(Extra wide)<br>Running Shoe for Men|Red<br>Intuitive Comfortable With
+                        Flexible<br><span>27% Off</span> <del>3695</del> Rs.2697</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="rami-al-zayat-w33-zg-dNL4-unsplash.jpg" class="img1" alt="">
+                    <p>Tecno Spark 8T Turquoise cyan<br>Ram-4GB|ROM-64GB|Blue<br>Mediatech Helio G35|5000
+                        mah<br><span>40% off</span> <del>16000</del> Rs.9600</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="satyajit-ray-feluda-book-image.jpg" class="img1" alt="">
+                    <p>Feluda Bengali Story Book<br>By Satyajit Ray|Fifth Edition<br>Bengali|Hardcover|A
+                        Publishers|97788170668749<br><span>10% Off</span> <del>500</del> Rs.450</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="65julanta.jpg" class="img1" alt="">
+                    <p>Zegola Hanging Watch|Analog<br>Size-5cm*5cm|Plactic Body<br>Made in India|Zegola
+                        Bland<br><span>65% Off</span> <del>1000</del> Rs.350</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="65%mouse.jpg" class="img1" alt="">
+                    <p>Zebronics Zeb-Power Waired Optical Mouse<br>USB 2.0,White for
+                        Desktop/Laptop<br>USB2.0|Desktop|Laptop<br><span>32% Off</span> <del>249</del> Rs.169</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="65headphone.jpg" class="img1" alt="">
+                    <p>Boat Rockerz Overhead<br>30Hours Playback System<br>Beast mode|Enx Tecnology|Headset<br><span>50%
+                            Off</span> <del>2999</del> Rs.1500</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="65headphone1.jpeg" class="img1" alt="">
+                    <p>Dayneo TwsL21 wairless Bluetooth Headphone<br>Wairless and Bluetooth
+                        Support<br>Black|Bluetooth|Wairless|mini<br><span>65% Off</span> <del>1999</del> Rs.699</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="fullshirt.jpeg" class="img1" alt="">
+                    <p>Highlander|Men Slim Fit Casual Shirt<br>White|Classic|Casual|Men<br>Size-S|M|L|XL<br><span>65%
+                            Off</span> <del>1349</del> Rs.472</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="images (1) (16).jpeg" class="img1" alt="">
+                    <p>TP-Link TL-WR845N N 300 mbps<br>Single Bang|Triple Stand|White<br>Wairless Without
+                        Modem|Extarnal<br><span>32% Off</span> <del>1699</del> Rs.1149</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+                <div class="box4"><img src="images (1) (18).jpeg " class="img1" alt="">
+                    <p>Fubar Men Fit Blue Cotton Casual Trousers<br>Casual Ware|Men|Fit<br>Black|Blue|Brown<br><span>65%
+                            off</span><del>4999</del>Rs.1749</p>
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- this is footer -->
+        <section class="section3">
+            <footer>
+                <div class="box23">
+                    <div class="lox">
+                        <label for="email">Type Your Email</label>
+                        <input type="email" id="email" class="email" placeholder="Type your email">
+                        <button>Subcribe</button>
+                    </div>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>About Flipcart</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="td1">order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Return policy</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">careers</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">locations</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">sitemap</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th>About Policy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="td1">order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Return policy</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Track Your Order</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Service Center</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Feedback</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="box26">
+                    <p class="copy">&copy;copyright right reserve 2022</p>
+                </div>
+                <div class="box27">
+                    <div class="lox1">
+                        <img src="fblogo.png" class="log" alt="">
+                        <img src="instalogo.png" class="log" alt="">
+                        <img src="twitterlogo.png" class="log" alt="">
+                        <img src="gmail.png" class="log" alt="">
+                    </div>
+                </div>
+
+
+
+
+
+
+            </footer>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

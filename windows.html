@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+
+            position: relative;
+            z-index: 1;
+            background-color: #2874f0;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar .ul .li {
+            display: inline-block;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+            /* padding: 5px 5px; */
+        }
+
+
+
+        ul a {
+            display: none;
+            position: absolute;
+            color: white;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            overflow: hidden;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            z-index: 3;
+
+            padding: 10px;
+
+
+
+        }
+
+        li:hover>ul a {
+            display: block;
+        }
+
+        ul a:hover {
+            background-color: blueviolet;
+        }
+
+        .img {
+            height: 90px;
+            width: 130px;
+            position: absolute;
+            top: 20px;
+
+            display: inline-block;
+
+        }
+
+        input {
+            border-radius: 10px;
+            height: 30px;
+            border-style: none;
+        }
+
+        .si {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            /* bottom: 10px; */
+
+
+        }
+
+        .fc {
+            /* position:relative; */
+            height: 60px;
+            width: 70px;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .ul .li {
+            display: flex;
+        }
+
+        .li strong {
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: large;
+            margin-top: 15px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center
+        }
+
+        span {
+            color: gold;
+        }
+
+        .fl {
+            height: 70px;
+            width: 70px;
+            margin: 10px 0px;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex-basis: 25%;
+
+        }
+
+        button {
+            background-color: crimson;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        button:hover {
+            box-shadow: 0px 0px 10px 10px blueviolet;
+        }
+
+        /* span {
+            color: blue;
+        } */
+        p span {
+            color: blue;
+        }
+
+        .box1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .box1 p {
+            color: brown;
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .log {
+            height: 30px;
+            width: 30px;
+        }
+
+        .box23 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box26 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box27 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: darkgray;
+        }
+
+        .b {
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            color: darkmagenta;
+        }
+
+        .btn {
+            background-color: aqua;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            border-style: none;
+
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .li .newuser {
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .buynow a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .newuser img {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+
+        }
+        button .abd{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+            .li .grocery{
+            display:flex;
+            position: relative;
+            color: white;
+           
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <!-- this is for header and navigation -->
+        <section class="section">
+            <header>
+                <nav class="navbar">
+                    <div class="icon"><img src="./Listing Page/flipkart-icon (1).webp" class="fl" alt=""></div>
+
+
+                    <ul class="ul">
+                        <li class="li"><strong> FLIPCART</strong><br>Explore <span>Plus</span></li>
+
+                        <li class="li">Home</li>
+                        <li class="li">Mobile
+                            <ul>
+                                <li><a href="android.html"> Android</a></li>
+                                <li><a href="iphone.html"> Iphone</a></li>
+                            </ul>
+                        </li>
+                        <li class="li">Computer
+                            <ul>
+                                <li class=""><a href="windows.html"> Windows</a></li>
+                                <li class=""><a href="macbook.html"> MacBook</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="grocery.html" class="grocery"> Grocery</a></li>
+                        <li class="li"><input type="search" placeholder="Scarch Product">
+                            <img src="./sicon.jpeg" class="si" alt="">
+                        </li>
+
+                        <li class="li"><a class="newuser" href="Newuser.html"> Sign Up</a></li>
+                        <li class="li"><a class="newuser" href="Loginpage.html"> Login</a></li>
+                        <li class="li"><a class="newuser" href="Mycart.html"><img src="./cart.jpeg" class="fc" alt=""></a></li>
+
+
+
+                    </ul>
+
+
+
+
+                </nav>
+            </header>
+        </section>
+        <!-- this is for product list and details -->
+        <section class="section1">
+            <div class="box1">
+                <p>SORT</p>
+                <P>|</P>
+                <p>Filter</p>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="box">
+                <p class="b">Categories</p>
+                <label for="windows" id="windows">Windows</label>
+                <input type="radio" name="filter" id="windows">
+                <br>
+                <label for="linux" id="linux">Linux</label>
+                <input type="radio" name="filter" id="linux">
+                <br>
+                <label for="iphone" id="iphone">Iphone</label>
+                <input type="radio" name="filter" id="iphone">
+                <br>
+                <label for="android" id="android">Android</label>
+                <input type="radio" name="filter" id="android"><br>
+                <button class="scarch">Scarch</button>
+            </div>
+
+            <div class="box">
+                <img src="./Listing Page/acer.jpeg" alt="">
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">ACER Vivobook 15(2022)</b><br>Core i3 10th Gen<br>8 GB|512 GB SSD|Windows 11 Home
+                    <br>X515JA-EJ362WS|X515JA-EJ392WS|Thin And Light Laptop
+                    15 inch <br>Transparent Silver,1.80kg<br>With MS Office.
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+
+            <div class="box">
+                <p><b class="b">Price Rs.33,990</b><br><del>45,990</del> <span>26% off</span><br>Emi starts
+                    from Rs.1,179/month.<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details10.html" class="abd"> Details</a></button>
+                <button><a href="Buynow10.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+            </div>
+
+
+
+
+
+            <div class="box">
+
+            </div>
+
+            <div class="box">
+                <img src="./Listing Page/acer10.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">ACER Aspire 3 Ryzen 3 </b><br>Dual core 3250U-<br>8 GB|256 GB SSD
+                    <br>Windows 11 Home A315-23 Laptop
+                    <br>15 Inch,Charcoal Black,1.9 Kg<br>Light Laptop With Optical Disk Drive<br>15 Inch Full HD
+                    High-Brightness Acer comfyview<br>LED Backlit <br>TFT<br>16:9 aspect ratio.
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+            </div>
+
+            <div class="box">
+                <p><b class="b">Price Rs.24,990</b><br><del>42,999</del> <span>41% off</span><br>No cost EMI
+                    Starts Rs.4,165/month<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details11.html" class="abd"> Details</a></button>
+                <button><a href="Buynow11.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./Listing Page/laptop.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">LENOVO IdeaPad 3 Core i3 11 Gen</b><br>8 GB|512 GB|SSD Windows 11 Home<br>82H801L7IN
+                    <br>82H802FJIN|82H802L3IN|
+                    <br>Thin And Light Laptop<br>15.6 inch,Arctic Gray,1.65kg<br>With MS Office
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+
+                </p>
+
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.37,490</b><br><del>59,390</del> <span>36% off</span><br>EMI From
+                    Rs.1,300/month<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details12.html" class="abd"> Details</a></button>
+                <button><a href="Buynow12.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./Listing Page/laptop10.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">REDMI Book Pro Core i5 11 Gen</b><br>8 GB|512 GB|Windows11 Home <br>Thin and
+                    Light Laptop<br>15.6 inch
+                    Charcoal Black<br>1.8 Kg,With MS Office
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.42,990</b><br><del>59,999</del> <span>28% off</span><br>EMI From
+                    Rs.1491/month<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details13.html" class="abd"> Details</a></button>
+                <button><a href="Buynow13.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+
+
+            <div class="box">
+
+            </div>
+
+
+            <div class="box">
+                <img src="./laptop4.jpg" alt="">
+
+            </div>
+
+            <div class="box">
+                <p>
+                    <b class="b">DELL Insprion Core i3 11 Gen</b><br>8 GB|1 TB HDD|256 GB SSD<br>|Windows
+                    11 Home<br>D560841WIN9S Thin And Light Laptop
+                    <br>15.6 inch Silver,With MS Office.
+                    <br><br><br>
+                    <button class="btn">Cash On Delivery</button>
+                    <button class="btn">Product Exchange</button>
+                </p>
+
+
+            </div>
+            <div class="box">
+                <p><b class="b">Price Rs.39,990</b><br><del>61,202</del> <span>34% off</span><br>EMI From
+                    Rs.1,387/month<br><span>View Plans
+                    </span></p><br>
+                <button><a href="details14.html" class="abd"> Details</a></button>
+                <button><a href="Buynow14.html" class="abd"> Buy Now</a></button>
+                <button><a href="Mycart.html" class="abd"> Add To Cart</a></button>
+
+            </div>
+
+
+
+
+
+        </section>
+        <!-- this is for footer -->
+        <footer>
+
+            <div class="box23">
+                <div class="lox">
+                    <label for="email">Type Your Email</label>
+                    <input type="email" id="email" class="email" placeholder="Type your email">
+                    <button>Subcribe</button>
+                </div>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>About Flipcart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">careers</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">locations</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">sitemap</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <th>About Policy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="td1">order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Return policy</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Track Your Order</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Service Center</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Feedback</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            <div class="box26">
+                <p class="copy">&copy;copyright right reserve 2022</p>
+            </div>
+            <div class="box27">
+                <div class="lox1">
+                    <img src="fblogo.png" class="log" alt="">
+                    <img src="instalogo.png" class="log" alt="">
+                    <img src="twitterlogo.png" class="log" alt="">
+                    <img src="gmail.png" class="log" alt="">
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

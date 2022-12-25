@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        img {
+            height: 100px;
+            width: 150px;
+        }
+
+        header {
+            background-color: #2874f0;
+            ;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            position: relative;
+            color: white;
+            top: 20px;
+            left: 100px;
+            font-size: large;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        h2 {
+            /* text-align: center; */
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .para {
+            /* text-align: center; */
+            color: grey;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            left: -5px;
+        }
+
+        .box {
+
+
+            width: 40vw;
+            height: 40vh;
+            margin: auto;
+            /* border: 2px solid green; */
+            margin-top: 150px;
+            background-color: #2874f0;
+            box-shadow: 0px 0px 10px 10px lightcoral;
+            border-radius: 15px;
+
+
+        }
+
+        .box1 {
+            margin: auto;
+            position: relative;
+            left: 180px;
+            margin-top: 40px;
+
+
+        }
+
+        .box2 {
+            margin: auto;
+            position: relative;
+            left: 180px;
+            margin-top: 40px;
+
+
+        }
+
+        .sec {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .number {
+            height: 40px;
+            width: 250px;
+            border-radius: 10px;
+            border-style: none;
+        }
+
+        .password {
+            height: 40px;
+            width: 250px;
+            border-radius: 10px;
+            border-style: none;
+
+        }
+        .login{
+            position: relative;
+            left: 280px;
+            top: 30px;
+            border-radius: 15px;
+            background-color: crimson;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+        .login:hover{
+            font-size: large;
+            color: blue;
+        }
+        .create{
+            position: relative;
+            top: 70px;
+            left: 240px;
+        }
+        .or{
+            position: relative;
+            top: 40px;
+            left: 295px;
+
+        }
+        .box a{
+            text-decoration: none;
+            color:white;
+
+        }
+        .box a:hover{
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+            font-size: large;
+        }
+        .h2{
+            text-align: center;
+            position: relative;
+            top: 100px;
+            font-weight: bold;
+            color: blueviolet;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this is for header -->
+    <header>
+        <div class="container">
+            <p>Flipcart</p>
+            <img src="./flipcartlogo2.png" alt="">
+        </div>
+    </header>
+    
+    <!-- this is for body  -->
+
+    <div class="head"><h2 class="h2">User Login</h2></div>
+    <section class="sec">
+        <div class="box">
+            <div class="box1"><input type="number" class="number" placeholder="User Id/Phone Number"> </div>
+            <div class="box2"><input type="password" class="password" placeholder="Password"></div>
+            <button class="login"><a href="ecom.html"> Log In </a></button><br>
+            <strong class="or">OR</strong>
+            <a href="#"><strong class="create"><a href="Newuser.html"> Create One</a></strong></a>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
